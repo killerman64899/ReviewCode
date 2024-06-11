@@ -12,9 +12,9 @@ public class StartupBust {
         Startup STARTUPtwo = new Startup();
         Startup STARTUPthree = new Startup();
 
-        STARTUPone.setName("FIITJEE");
-        STARTUPtwo.setName("Akaash");
-        STARTUPthree.setName("Byjus");
+        STARTUPone.setName("StartupOne");
+        STARTUPtwo.setName("StartupTwo");
+        STARTUPthree.setName("StartupThree");
 
         startups.add(STARTUPone);
         startups.add(STARTUPtwo);
@@ -90,6 +90,7 @@ public class StartupBust {
                     container.remove(i);
                     if(container.isEmpty()){
                         result = "Kill";
+                        System.out.println("You sunk " + containerOuter.name + "!");
                         containerOuter.setLifeState(false);
 
                     }
@@ -108,7 +109,7 @@ public class StartupBust {
         } else if (numOfGuesses>20 && numOfGuesses<15){
             System.out.println("Wow! You're pretty good eh?");
         } else if (numOfGuesses<15){
-            System.out.println("Chill out bruh there's no need to speedrun this");
+            System.out.println("Chill out. There's no need to speedrun this");
         }
     }
 
